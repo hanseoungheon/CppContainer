@@ -4,25 +4,6 @@
 //int형.
 typedef struct _tagArr
 {
-	_tagArr()
-	{
-
-	}
-
-	~_tagArr()
-	{
-		//예외처리.
-		if (pInt)
-		{
-			free(pInt);
-
-			pInt = nullptr;
-
-			iCount = 0;
-
-			iMaxCount = 0;
-		}
-	}
 
 	//뭐가 필요할까?
 	//연산자 오버로딩?

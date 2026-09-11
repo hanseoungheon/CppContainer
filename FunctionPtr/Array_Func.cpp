@@ -1,6 +1,6 @@
 #include <iostream>
 
-#include "Array.h"
+#include "Array_Func.h"
 
 void InitArr(tArr* _pArr)
 {
@@ -79,4 +79,10 @@ void ReeaseArr(tArr* _pArr)
 	free(_pArr->pInt);
 	_pArr->iCount = 0;
 	_pArr->iMaxCount = 0;
+}
+
+void Sort(tArr* _pArr, void(*SortFunc)(int* /*pData*/, int /*iCount*/))
+{
+	_pArr;
+	SortFunc(_pArr->pInt, _pArr->iCount);
 }
